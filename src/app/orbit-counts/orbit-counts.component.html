@@ -1,6 +1,12 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total" *ngIf="satellites.length===0||satellites.length>0">{{satellites.length}}</span></div>
-</div>
+	<div>Total: <span class="counts-total" *ngIf="satellites.length===0||satellites.length>0">{{satellites.length}}</span><br>
+		Space Debris: <span class="counts-total">{{countByType("Space Debris")}}</span><br>
+		Communication: <span class="counts-total">{{countByType("Communication")}}</span><br>
+		Probe: <span class="counts-total">{{countByType("Probe")}}</span><br>
+		Positioning: <span class="counts-total">{{countByType("Positioning")}}</span><br>
+		Space Station: <span class="counts-total">{{countByType("Space Station")}}</span><br>
+		Telescope: <span class="counts-total">{{countByType("Telescope")}}</span><br></div>
 
+</div>
 <!-- TODO 4: add logic to count number of satellites displayed -->

@@ -12,3 +12,7 @@
 .counts span {
 	float: right;
 }
+
+br {
+	line-height: 2em;
+} 
