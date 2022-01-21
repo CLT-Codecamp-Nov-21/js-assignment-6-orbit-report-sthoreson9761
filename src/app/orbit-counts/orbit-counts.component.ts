@@ -14,6 +14,13 @@ export class OrbitCountsComponent implements OnInit {
 
   ngOnInit() {
   }
+  satTypes = [{"name":"Space Debris","count":this.countByType("Space Debris")},
+  {"name":"Communication","count":this.countByType("Communication")},
+  {"name":"Probe","count":this.countByType("Probe")},
+  {"name":"Positioning","count":this.countByType("Positioning")},
+  {"name":"Space Station","count":this.countByType("Space Station")},
+  {"name":"Telescope","count":this.countByType("Telescope")}];
+
 
   countByType(type: string): number {
 	let count = 0;
