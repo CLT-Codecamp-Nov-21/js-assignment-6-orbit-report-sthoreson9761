@@ -8,8 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor="let sat of satellites">
         <td>{{sat.name}}</td>
-        <td class="warning" *ngIf="sat.isSpaceDebris(); else varName">{{sat.type}}</td>
-        <ng-template #varName><td>{{sat.type}}</td></ng-template>
+        <td [class.warning]="sat.isSpaceDebris()">{{sat.type}}</td>
         <td>{{sat.operational}}</td>
         <td>{{sat.orbitType}}</td>
         <td>{{sat.launchDate}}</td>
